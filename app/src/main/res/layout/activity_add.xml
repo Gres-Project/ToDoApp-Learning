@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Task Title"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextKeteranganTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Keterangan Task"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Task Status"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/buttonTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tambah"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="15dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
