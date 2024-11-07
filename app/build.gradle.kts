@@ -4,19 +4,21 @@ plugins {
 }
 
 android {
-    namespace = "com.example.todoappyuriko"
+    namespace = "com.example.todoapplearning"
     compileSdk = 35
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
-        applicationId = "com.example.todoappyuriko"
+        applicationId = "com.example.todoapplearning"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // add this
-        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -35,13 +37,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
-    // add this
-    implementation(libs.androidx.recyclerview)
-
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -1,4 +1,4 @@
-package com.example.todoappyuriko
+package com.example.todoapplearning
 
 import org.junit.Test
 
